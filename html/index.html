@@ -3,26 +3,35 @@
 	<head>
 		<!-- Start META -->
 		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-		<meta name="keywords" content="Регистрация пользователей CATOCA DATABASE, Авторизация пользователей" /> 
-		<meta name="description" content="Регистрация пользователей CATOCA DATABASE с активацией письмом" />
+		<meta name="keywords" content="CATOCA DATABASE" /> 
+		<meta name="description" content="CATOCA DATABASE" />
 		<!-- TITLE -->
-		<title>Регистрация пользователей CATOCA DATABASE с активацией письмом</title>
-       
+		<title>CATOCA DATABASE</title>
+       	<link rel="shortcut icon" href="../png/ico.png" type="image/png">
+	<!-- Подключения таблицы стилей Bootstrap 3 -->
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css">
+  <!-- Подключение темы со стилями Bootstrap 3 -->
+  <link rel="stylesheet" type="text/css" href="../css/bootstrap-theme.min.css">
+  <!-- Подключение таблицы стилей, в которой будем прописывать свои стили -->
+  <link rel="stylesheet" type="text/css" href="../css/style.css">
+  <!-- Подключение библиотеки jQuery для работы скриптов Bootstrap 3 -->
+  <script src="js/jquery-3.3.1.min.js"></script>
+  <!-- Подключение скриптов Bootstrap 3 -->
+  <script src="js/bootstrap.min.js"></script>
        	<!-- Start Sheets CSS -->
-		<link href="./css/style.css" rel="stylesheet" type="text/css">
+		<link href="../css/style.css" rel="stylesheet" type="text/css">
 	</head>
 	<body>
-		<div id="wrap">
-			<div id="menu">
-				<div class="menu">
-					<ul>
-						<li><a href="<?php echo CAT_HOST; ?>?mode=auth">Войти</a></li>
-						<li><a href="<?php echo CAT_HOST; ?>?mode=reg">Регистрация</a></li>
-					</ul>
+		<div class="bodyWrapper">
+			<header>
+				<div class="headerWrapper">
+					<div class="logo"> <img src="png/logo_catoca.png" alt="logo"><h1>Departamento de geologia</h1></div>
 				</div>
-			</div>
+			</header>
+			
+				<a href="<?php echo CAT_HOST; ?>?mode=auth">Войти</a>
 			<div style="clear:both;"></div>
-			<div id="content">
+			<div class="contentWrapper">
 				<?php echo $content; ?>
 			</div>
 		</div>

@@ -16,10 +16,10 @@
  {
 	//Проверяем на пустоту
 	if(empty($_POST['email']))
-		$err[] = 'Не введен Логин';
+		$err[] = 'Login not entered';
 	
 	if(empty($_POST['pass']))
-		$err[] = 'Не введен Пароль';
+		$err[] = 'Password not entered';
 	
 	//Проверяем email
 	//if(emailValid($_POST['email']) === false)
@@ -58,9 +58,9 @@
 				exit;
 			}
 			else
-				echo showErrorMessage('Неверный пароль!');
+				echo showErrorMessage('Wrong password!');
 		}else{
-			echo showErrorMessage('Логин <b>'. $_POST['email'] .'</b> не найден!');
+			echo showErrorMessage('Login <b>'. $_POST['email'] .'</b> not found!');
 		}
 	}
  }

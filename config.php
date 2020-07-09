@@ -30,7 +30,5 @@
 
  //Адрес хоста сайта
  define('CAT_HOST','http://'. $_SERVER['HTTP_HOST'] .'/');
- 
- //Адрес почты от кого отправляем
- define('CAT_MAIL_AUTOR','t.nevlyutov@gmail.com');
+
  ?>
