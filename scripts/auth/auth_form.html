@@ -1,17 +1,12 @@
 
-	<form class="enterForm" action="" method="POST">
-		<table>
-			<tr>
-				<td>Login:</td>
-				<td><input type="text" size="30" name="email"></td>
-			</tr>
-			<tr>
-				<td>Password:</td>
-				<td><input type="password" size="30" maxlength="20" name="pass"></td>
-			</tr>
-			<tr>
-				<td>&nbsp;</td>
-				<td colspan="2"><input type="submit" value="Submit" name="submit"></td>
-			</tr>
-		</table>
+	<form class="container enterForm" action="" method="POST">
+		<div class="form-group">
+    <label for="exampleInputEmail1">Login</label>
+    <input type="text" class="form-control" id="exampleInputEmail1" name="email" aria-describedby="emailHelp">
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" class="form-control" id="exampleInputPassword1" name="pass" >
+  </div>
+  <button type="submit" class="btn btn-primary" name="submit">Submit</button>
 	</form>

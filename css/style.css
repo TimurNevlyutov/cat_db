@@ -26,16 +26,28 @@ header {
         
 }
 .contentWrapper{
+
 	height: 780px;
-	font-family: AvenirNext-Regular;
+	font-family: AvenirNext-Bold;
+
 }
 
+.container {
+	margin:0 0 0 auto;
+}
 .enterForm {
-	font-family: AvenirNext-Regular;
-        color:white;
+	font-family: AvenirNext-Bold;
+	color:white;
+	max-width:25%;
 }
 
-
+.alert-danger {
+	max-width:22%;
+	margin: 10px 16px 10px auto;
+	text-align: center;
+	list-style-type: none;
+	font-family: 12px Avenirnext-Bold;
+}
 p{
         font-family: AvenirNext-Regular;
         color:white;

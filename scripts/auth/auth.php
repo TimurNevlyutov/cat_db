@@ -20,15 +20,6 @@
 	
 	if(empty($_POST['pass']))
 		$err[] = 'Password not entered';
-	
-	//Проверяем email
-	//if(emailValid($_POST['email']) === false)
-		//$err[] = 'Не корректный E-mail';
-
-	//Проверяем наличие ошибок и выводим пользователю
-	//if(count($err) > 0)
-		//echo showErrorMessage($err);
-	//else
 	{
 		/*Создаем запрос на выборку из базы 
 		данных для проверки подлиности пользователя*/
