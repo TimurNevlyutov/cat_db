@@ -15,7 +15,7 @@
  if(isset($_POST['submit']))
  {
 	//Проверяем на пустоту
-	if(empty($_POST['email']))
+	if(empty($_POST['loginName']))
 		$err[] = 'Login not entered';
 	
 	if(empty($_POST['pass']))
@@ -25,12 +25,12 @@
 		данных для проверки подлиности пользователя*/
 		$sql = 'SELECT * 
 				FROM cat_reg
-				WHERE login = :email
+				WHERE login = :loginName
 				AND status = 1';
 
 		//Подготавливаем PDO выражение для SQL запроса
 		$stmt = $db->prepare($sql);
-		$stmt->bindValue(':email', $_POST['email'], PDO::PARAM_STR);
+		$stmt->bindValue(':loginName', $_POST['loginName'], PDO::PARAM_STR);
 		$stmt->execute();
 
 		//Получаем данные SQL запроса
@@ -51,7 +51,7 @@
 			else
 				echo showErrorMessage('Wrong password!');
 		}else{
-			echo showErrorMessage('Login <b>'. $_POST['email'] .'</b> not found!');
+			echo showErrorMessage('Login <b>'. $_POST['loginName'] .'</b> not found!');
 		}
 	}
  }
