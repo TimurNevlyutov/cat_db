@@ -38,4 +38,6 @@
 
 	//Подключаем наш шаблон
 	include './html/index.html';
+
+	include './mainArea/mainArea.php';
 ?>
