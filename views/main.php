@@ -51,21 +51,20 @@
 <div class="col-9">
     <div class="col-9">
     <div class="tab-content" id="v-pills-tabContent">
-      <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">111.</div>
-      <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">222</div>
-      <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">333</div>
-      <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">...</div>
+      <div class="tab-pane fade" id="v-pills-common" role="tabpanel" aria-labelledby="v-pills-common-tab">111.</div>
+      <div class="tab-pane fade" id="v-pills-doc" role="tabpanel" aria-labelledby="v-pills-doc-tab">222</div>
+      <div class="tab-pane fade" id="v-pills-simple" role="tabpanel" aria-labelledby="v-pills-simple-tab">333</div>
+      <div class="tab-pane fade" id="v-pills-passport" role="tabpanel" aria-labelledby="v-pills-passport-tab">444</div>
+      <div class="tab-pane fade" id="v-pills-catalogue" role="tabpanel" aria-labelledby="v-pills-catalogue-tab">555</div>
+      <div class="tab-pane fade" id="v-pills-monthReport" role="tabpanel" aria-labelledby="v-pills-monthReport-tab">666</div>
+  
+    </div>
     </div>
   </div>
-  <div class="col-9">
-    <div class="tab-content" id="v-pills-tabContent">
-      <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">444</div>
-      <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">555</div>
-      <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">666</div>
-      <div class="tab-pane fade" id="v-pills-settings" role="tabpanel" aria-labelledby="v-pills-settings-tab">...</div>
-    </div>
+
+
   </div>
-  </div>
+
 
 	<div class="container success" >	
 		<div class="alert alert-success alert-dismissible fade show" role="alert">
