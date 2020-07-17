@@ -14,7 +14,6 @@
 	$mode = 'auth';
 	$user = isset($_SESSION['user']) ? $_SESSION['user'] : false;
 	$err = array();
-
 	//Устанавливаем ключ защиты
 	define('CAT_KEY', true);
 
@@ -38,6 +37,4 @@
 
 	//Подключаем наш шаблон
 	include './html/index.html';
-
-	include './mainArea/mainArea.php';
 ?>

@@ -28,12 +28,10 @@
 			<img class="rounded mx-auto d-block logoMain" src="../png/logoMain90x45.svg" alt="logo">
 		</div>
 		<div class="col-lg-10 bookmarks">
-			<nav>
-				<div class="nav nav-tabs" id="nav-tab" role="tablist">
-				<a class="nav-item nav-link active" id="nav-input-tab" data-toggle="tab" href="../mainArea/mainArea.php?size=big" role="tab" aria-controls="nav-input" aria-selected="true">Input</a>
-				<a class="nav-item nav-link" id="nav-report-tab" data-toggle="tab" href="./mainArea/mainArea.php?size=smo" role="tab" aria-controls="nav-report" aria-selected="false">Report</a>
-				</div>
-			</nav>
+			<div class="btn-group-vertical" role="group">
+				<button type="button" class="btn btn-secondary">1</button>
+  				<button type="button" class="btn btn-secondary">2</button>
+			</div>
 		</div>
 		<div class="col-lg-1 logout">
 			<a href="/?mode=auth&exit=true">EXIT</a>
@@ -41,26 +39,24 @@
 	</div>
 </div>
 <div class="row">
-<div class="col-lg-2 asideMenu"> 
-<?php include 'mainArea.php' ?>
-
-</div>
-<div class="col-lg-10 mainArea">
-	<div class="container success" >	
-		<div class="alert alert-success alert-dismissible fade show" role="alert">
-			<h5 class="alert-heading">Welcome to CATOCA DB!</h5>
-			<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-			<span aria-hidden="true">&times;</span>
-			</button>
-		</div>
-		<div class="tab-content" id="nav-tabContent">
-		<div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-		</div>
-		<div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">...</div>
+	<div class="col-lg-2 asideMenu"> 
+		
 	</div>
-	
-</div>
-</div>
+	<div class="col-lg-10 mainArea">
+		<div class="container success" >	
+			<div class="alert alert-success alert-dismissible fade show" role="alert">
+				<h5 class="alert-heading">Welcome to CATOCA DB!</h5>
+				<button type="button" class="close" data-dismiss="alert" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+				</button>
+			</div>
+			<div class="tab-content" id="nav-tabContent">
+				<div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+				</div>
+				<div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">...</div>
+			</div>
+		</div>
+	</div>
 </div>
 </body>
 </html>
