@@ -30,13 +30,13 @@
 		<div class="col-lg-10 bookmarks">
 			<nav>
 				<div class="nav nav-tabs" id="nav-tab" role="tablist">
-				<a class="nav-item nav-link active" id="nav-input-tab" data-toggle="tab" href="#nav-input" role="tab" aria-controls="nav-input" aria-selected="true">Input</a>
-				<a class="nav-item nav-link" id="nav-report-tab" data-toggle="tab" href="#nav-report" role="tab" aria-controls="nav-report" aria-selected="false">Report</a>
+				<a class="nav-item nav-link active" id="nav-input-tab" data-toggle="tab" href="#nav-input" role="tab" aria-controls="nav-input" aria-selected="true">Ввод данных</a>
+				<a class="nav-item nav-link" id="nav-report-tab" data-toggle="tab" href="#nav-report" role="tab" aria-controls="nav-report" aria-selected="false">Отчеты</a>
 				</div>
 			</nav> 
 		</div>
 		<div class="col-lg-1 logout">
-			<a href="/?mode=auth&exit=true">EXIT</a>
+			<a href="/?mode=auth&exit=true">Выход</a>
 		</div>
 	</div>
 </div>
@@ -48,19 +48,19 @@
 </div>
 </div>
 <div class="col-lg-10 mainArea">
-<div class="col-9">
-    <div class="col-9">
+<div class="col-12">
+    <div class="row">
     <div class="tab-content" id="v-pills-tabContent">
-      <div class="tab-pane fade" id="v-pills-common" role="tabpanel" aria-labelledby="v-pills-common-tab">111.</div>
-      <div class="tab-pane fade" id="v-pills-doc" role="tabpanel" aria-labelledby="v-pills-doc-tab">222</div>
+      <div class="tab-pane fade" id="v-pills-common" role="tabpanel" aria-labelledby="v-pills-common-tab"><?php require ('../php/commonInput.php')?></div>
+      <div class="tab-pane fade" id="v-pills-doc" role="tabpanel" aria-labelledby="v-pills-doc-tab"><?php require ('../php/docInput.php.php')?></div>
       <div class="tab-pane fade" id="v-pills-simple" role="tabpanel" aria-labelledby="v-pills-simple-tab">333</div>
       <div class="tab-pane fade" id="v-pills-passport" role="tabpanel" aria-labelledby="v-pills-passport-tab">444</div>
       <div class="tab-pane fade" id="v-pills-catalogue" role="tabpanel" aria-labelledby="v-pills-catalogue-tab">555</div>
       <div class="tab-pane fade" id="v-pills-monthReport" role="tabpanel" aria-labelledby="v-pills-monthReport-tab">666</div>
-  
-    </div>
-    </div>
   </div>
+    </div>
+    </div>
+
 
 
   </div>

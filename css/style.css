@@ -103,6 +103,15 @@ border-bottom:1px solid white;
 	border:1px solid white;
 	hight:886px;
 }
+
+.coordinateInputForm {
+	border-style: dotted;
+	margin-top:30px;
+	color: white;
+}
+.firstInformForm, .drillDateInputForm{
+	color: white;
+}
 p{
         font-family: AvenirNext-Regular;
         color:white;
