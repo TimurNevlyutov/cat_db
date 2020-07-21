@@ -36,6 +36,7 @@ header {
 
 .container {
 	margin:0 0 0 auto;
+	display:flex;
 }
 .enterForm {
 	font-family: AvenirNext-Bold;
@@ -112,6 +113,28 @@ border-bottom:1px solid white;
 .firstInformForm, .drillDateInputForm{
 	color: white;
 }
+.depth, .drillingMachine {
+	display:flex;
+	justify-content: flex-end;
+}
+.constructDH {
+	border-style: dotted;
+	margin-top:10px;
+	color: white;
+}
+.form-group {
+	margin-bottom: 5px;
+}
+
+#submitInput{
+	height:50px;
+	width: 250px;
+	margin:200px auto;
+}
+label{
+	margin-bottom: 5px;
+}
+
 p{
         font-family: AvenirNext-Regular;
         color:white;

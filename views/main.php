@@ -48,36 +48,23 @@
 </div>
 </div>
 <div class="col-lg-10 mainArea">
-<div class="col-12">
-    <div class="row">
+
+    <div class="col-12">
     <div class="tab-content" id="v-pills-tabContent">
       <div class="tab-pane fade" id="v-pills-common" role="tabpanel" aria-labelledby="v-pills-common-tab"><?php require ('../php/commonInput.php')?></div>
-      <div class="tab-pane fade" id="v-pills-doc" role="tabpanel" aria-labelledby="v-pills-doc-tab"><?php require ('../php/docInput.php.php')?></div>
+      <div class="tab-pane fade" id="v-pills-doc" role="tabpanel" aria-labelledby="v-pills-doc-tab"><?php require ('../php/docInput.php')?></div>
       <div class="tab-pane fade" id="v-pills-simple" role="tabpanel" aria-labelledby="v-pills-simple-tab">333</div>
       <div class="tab-pane fade" id="v-pills-passport" role="tabpanel" aria-labelledby="v-pills-passport-tab">444</div>
       <div class="tab-pane fade" id="v-pills-catalogue" role="tabpanel" aria-labelledby="v-pills-catalogue-tab">555</div>
       <div class="tab-pane fade" id="v-pills-monthReport" role="tabpanel" aria-labelledby="v-pills-monthReport-tab">666</div>
-  </div>
+  
     </div>
     </div>
-
-
 
   </div>
 
 
-	<div class="container success" >	
-		<div class="alert alert-success alert-dismissible fade show" role="alert">
-			<h5 class="alert-heading">Welcome to CATOCA DB!</h5>
-			<button type="button" class="close" data-dismiss="alert" aria-label="Close">
-			<span aria-hidden="true">&times;</span>
-			</button>
-		</div>
-		<div class="tab-content" id="nav-tabContent">
-		<div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
-		</div>
-		<div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">...</div>
-	</div>
+
 	
 </div>
 </div>
