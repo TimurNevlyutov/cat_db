@@ -19,7 +19,7 @@
 	<!-- Подключение скриптов Bootstrap 3 -->
 	<script src="../js/bootstrap.min.js"></script>
 	<!-- Start Sheets CSS -->
-	<link href="../css/style.css" rel="stylesheet" type="text/css">
+	<link href="../css/mainstyle.css" rel="stylesheet" type="text/css">
 </head>
 <body>
 <div class="container-fluid mainMenu">
@@ -63,6 +63,23 @@
 
   </div>
 
+
+
+<script> $('#inputObject').change(function(){
+  var val = $(this).val();
+  //если элемент с id равным значению #inputObject
+  if(val != 'Новые концессии'){
+     //скрываем все селекты #inputConcession
+    $('#inputConcession select').hide();
+    $('#inputConcession label').hide();
+    //в противном случае, если значение равняется "Новые концессии"
+  }else if(val == 'Новые концессии'){
+    //показать все списки шага2
+    $('#inputConcession select').show();
+    $('#inputConcession label').show();
+  }
+})
+</script>
 
 
 	

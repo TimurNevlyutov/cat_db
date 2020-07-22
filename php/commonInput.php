@@ -13,8 +13,8 @@ echo '
 			<option value="Луэле">Луэле</option>
 			</select>
 		</div>
-		<div class="form-group col-md-2">
-			<label for="inputConcession">Концессия</label>
+		<div class="form-group col-md-2" id="inputConcession">
+			<label id="inputConcession" for="inputConcession">Концессия</label>
 			<select id="inputConcession" name="commonInput[concession]" class="form-control">
 			<option selected>Выберите...</option>
 			<option>Гангу</option>
@@ -45,18 +45,18 @@ echo '
 		</div>
 		<div class="form-group col-md-2">
 			<label for="inputHoleNumber">№ скважины</label>
-			<input type="text" class="form-control" placeholder="№ скважины" id="inputHoleNumber" name="holeNumber">
+			<input type="text" class="form-control" placeholder="№ скважины" id="inputHoleNumber" name="commonInput[holeNumber]">
 		</div>
 	</div>
 	<div class="row">
 		<div class="container depth">
 			<div class="form-group col-md-2 projectDepth">
 				<label for="inputProjectDepth">Глубина прект., м</label>
-				<input type="text" class="form-control" placeholder="Глубина, м" name="projectDepth">
+				<input type="text" class="form-control" placeholder="Глубина, м" name="commonInput[projectDepth]">
 			</div>
 			<div class="form-group col-md-2 finalDepth">
 				<label for="inputFinalDepth">Глубина факт., м</label>
-				<input type="text" class="form-control" placeholder="Глубина, м" name="finalDepth">
+				<input type="text" class="form-control" placeholder="Глубина, м" name="commonInput[finalDepth]">
 			</div>
 		</div>
 	</div>
@@ -67,15 +67,15 @@ echo '
 	<div class="form-row">
 		<div class="form-group col-md-4">
 			<label for="inputEast">Восточная (Х)</label>
-			<input type="text" class="form-control" placeholder="East" id="inputEast" name="east">
+			<input type="text" class="form-control" placeholder="East" id="inputEast" name="commonInput[east]">
 		</div>
 		<div class="form-group col-md-4">
 			<label for="inputNorth">Северная (Y)</label>
-			<input type="text" class="form-control" placeholder="North" id="inputNorth" name="north">
+			<input type="text" class="form-control" placeholder="North" id="inputNorth" name="commonInput[north]">
 		</div>
 		<div class="form-group col-md-4">
 			<label for="inputRL">Абс. отметка (RL)</label>
-			<input type="text" class="form-control" placeholder="RL" id="inputRL" name="rl">
+			<input type="text" class="form-control" placeholder="RL" id="inputRL" name="commonInput[rl]">
 		</div>
 	</div>
 	</div>
@@ -83,15 +83,16 @@ echo '
 	<div class="form-row">
 		<div class="form-group col-md-3">
 			<label for="inputDrillStart">Бурение начато:</label>
-			<input type="date" class="form-control" placeholder="Дата" id="inputDrillStart" name="drillStart">
+			<input type="date" class="form-control" placeholder="Дата" id="inputDrillStart" name="commonInput[drillStart]">
 		</div>
 		<div class="form-group col-md-3">
 			<label for="inputDrillFinish">Бурение окончено:</label>
-			<input type="date" class="form-control" placeholder="Дата" id="inputDrillFinish" name="drillFinish">
+			<input type="date" class="form-control" placeholder="Дата" id="inputDrillFinish" name="commonInput[drillFinish]">
 		</div>
 		<div class="form-group col-md-6">
 			<label for="inputReasonDrillFinish">Причина окончания бурения</label>
-			<select class="form-control" id="inputReasonDrillFinish" name="drillReason">
+			<select class="form-control" id="inputReasonDrillFinish" name="commonInput[drillReason]">
+			<option selected>-----</option>
 			<option>выполнение геологического задания</option>
 			<option>геологическое осложнение</option>
 			<option>технологическое осложнение</option>
@@ -101,7 +102,8 @@ echo '
 	<div class="row">
 		<div class="form-group col-md-6">
 			<label for="inputAuthor">Документатор</label>
-			<select class="form-control" id="inputAuthor" name="author">
+			<select class="form-control" id="inputAuthor" name="commonInput[author]">
+			<option selected>-----</option>
 			<option>Бисеров Н.В.</option>
 			<option>Бойко А.Н.</option>
 			<option>Гураков П.Ф.</option>
@@ -138,7 +140,8 @@ echo '
 	<div class="container drillingMachine">
 		<div class="col-md-5">
 			<label for="drillingMachine">Буровой станок</label>
-			<select class="form-control" id="drillingMachine" name="drillMachine">
+			<select class="form-control" id="drillingMachine" name="commonInput[drillMachine]">
+			<option selected>-----</option>
 			<option>ЗИФ-650М</option>
 			<option>УРБ2-А2</option>
 			</select>
@@ -151,15 +154,16 @@ echo '
 		<div class="form-row ConductorFrom1">
 		<div class="form-group col-md-3">
 			<label for="conductorFrom1">От</label>
-			<input type="text" class="form-control" placeholder="От" id="ConductorFrom1" name="condFrom1">
+			<input type="text" class="form-control" placeholder="От" id="ConductorFrom1" name="commonInput[condFrom1]">
 		</div>
 		<div class="form-group col-md-3">
 			<label for="conductorTo1">До</label>
-			<input type="text" class="form-control" placeholder="До" id="ConductorTo1" name="condTo1">
+			<input type="text" class="form-control" placeholder="До" id="ConductorTo1" name="commonInput[condTo1]">
 		</div>
 		<div class="form-group col-md-3">
 			<label for="conductorDiam1">Диаметр, мм</label>
-			<select class="form-control" id="conductorDiam1" name="condDiam1">
+			<select class="form-control" id="conductorDiam1" name="commonInput[condDiam1]">
+			<option selected>-----</option>
 			<option>273</option>
 			<option>219</option>
 			<option>190</option>
@@ -168,13 +172,14 @@ echo '
 		</div>
 		<div class="form-row ConductorFrom2">
 		<div class="form-group col-md-3">
-			<input type="text" class="form-control" placeholder="От" id="ConductorFrom2" name="condFrom2">
+			<input type="text" class="form-control" placeholder="От" id="ConductorFrom2" name="commonInput[condFrom2]">
 		</div>
 		<div class="form-group col-md-3">
-			<input type="text" class="form-control" placeholder="До" id="ConductorTo2" name="condTo2">
+			<input type="text" class="form-control" placeholder="До" id="ConductorTo2" name="commonInput[condTo2]">
 		</div>
 		<div class="form-group col-md-3">
-			<select class="form-control" id="conductorDiam2" name="condDiam2">
+			<select class="form-control" id="conductorDiam2" name="commonInput[condDiam2]">
+			<option selected>-----</option>
 			<option>273</option>
 			<option>219</option>
 			<option>190</option>
@@ -183,13 +188,14 @@ echo '
 		</div>
 		<div class="form-row ConductorFrom3">
 		<div class="form-group col-md-3">
-			<input type="text" class="form-control" placeholder="От" id="ConductorFrom3" name="condFrom3">
+			<input type="text" class="form-control" placeholder="От" id="ConductorFrom3" name="commonInput[condFrom3]">
 		</div>
 		<div class="form-group col-md-3">
-			<input type="text" class="form-control" placeholder="До" id="ConductorTo3" name="condTo3">
+			<input type="text" class="form-control" placeholder="До" id="ConductorTo3" name="commonInput[condTo3]">
 		</div>
 		<div class="form-group col-md-3">
-			<select class="form-control" id="conductorDiam3" name="condDiam3">
+			<select class="form-control" id="conductorDiam3" name="commonInput[condDiam3]">
+			<option selected>-----</option>
 			<option>273</option>
 			<option>219</option>
 			<option>190</option>
@@ -203,15 +209,16 @@ echo '
 		</div>
 		<div class="form-group col-md-3">
 			<label for="drillingFrom1">От</label>
-			<input type="text" class="form-control" placeholder="От" id="drillingFrom1" name="drillFrom1">
+			<input type="text" class="form-control" placeholder="От" id="drillingFrom1" name="commonInput[drillFrom1]">
 		</div>
 		<div class="form-group col-md-3">
 			<label for="drillingTo1">До</label>
-			<input type="text" class="form-control" placeholder="До" id="drillingTo1" name="drillTo1">
+			<input type="text" class="form-control" placeholder="До" id="drillingTo1" name="commonInput[drillTo1]">
 		</div>
 		<div class="form-group col-md-3">
 			<label for="drillingDiam1">Диаметр, мм</label>
-			<select class="form-control" id="drillingDiam1" name="drillDiam1">
+			<select class="form-control" id="drillingDiam1" name="commonInput[drillDiam1]">
+			<option selected>-----</option>
 			<option>172</option>
 			<option>151</option>
 			<option>132</option>
@@ -221,13 +228,14 @@ echo '
 	</div>
 	<div class="form-row drilling2">
 		<div class="form-group col-md-3">
-			<input type="text" class="form-control" placeholder="От" id="drillingFrom2" name="drillFrom2">
+			<input type="text" class="form-control" placeholder="От" id="drillingFrom2" name="commonInput[drillFrom2]">
 		</div>
 		<div class="form-group col-md-3">
-			<input type="text" class="form-control" placeholder="До" id="drillingTo2" name="drillTo2">
+			<input type="text" class="form-control" placeholder="До" id="drillingTo2" name="commonInput[drillTo2]">
 		</div>
 		<div class="form-group col-md-3">
-			<select class="form-control" id="drillingDiam2" name="drillDiam2">
+			<select class="form-control" id="drillingDiam2" name="commonInput[drillDiam2]">
+			<option selected>-----</option>
 			<option>172</option>
 			<option>151</option>
 			<option>132</option>
@@ -237,13 +245,14 @@ echo '
 	</div>
 	<div class="form-row drilling3">
 		<div class="form-group col-md-3">
-			<input type="text" class="form-control" placeholder="От" id="drillingFrom3" name="drillFrom3">
+			<input type="text" class="form-control" placeholder="От" id="drillingFrom3" name="commonInput[drillFrom3]">
 		</div>
 		<div class="form-group col-md-3">
-			<input type="text" class="form-control" placeholder="До" id="drillingTo3" name="drillTo3">
+			<input type="text" class="form-control" placeholder="До" id="drillingTo3" name="commonInput[drillTo3]">
 		</div>
 		<div class="form-group col-md-3">
-			<select class="form-control" id="drillingDiam3" name="drillDiam3">
+			<select class="form-control" id="drillingDiam3" name="commonInput[drillDiam3]">
+			<option selected>-----</option>
 			<option>172</option>
 			<option>151</option>
 			<option>132</option>
@@ -253,13 +262,14 @@ echo '
 	</div>
 	<div class="form-row drilling4">
 		<div class="form-group col-md-3">
-			<input type="text" class="form-control" placeholder="От" id="drillingFrom4" name="drillFrom4">
+			<input type="text" class="form-control" placeholder="От" id="drillingFrom4" name="commonInput[drillFrom4]">
 		</div>
 		<div class="form-group col-md-3">
-			<input type="text" class="form-control" placeholder="До" id="drillingTo4" name="drillTo4">
+			<input type="text" class="form-control" placeholder="До" id="drillingTo4" name="commonInput[drillTo4]">
 		</div>
 		<div class="form-group col-md-3">
-			<select class="form-control" id="drillingDiam4" name="drillDiam4">
+			<select class="form-control" id="drillingDiam4" name="commonInput[drillDiam4]">
+			<option selected>-----</option>
 			<option>172</option>
 			<option>151</option>
 			<option>132</option>
@@ -269,13 +279,14 @@ echo '
 	</div>
 	<div class="form-row drilling5">
 		<div class="form-group col-md-3">
-			<input type="text" class="form-control" placeholder="От" id="drillingFrom5" name="drillFrom5">
+			<input type="text" class="form-control" placeholder="От" id="drillingFrom5" name="commonInput[drillFrom5]">
 		</div>
 		<div class="form-group col-md-3">
-			<input type="text" class="form-control" placeholder="До" id="drillingTo5" name="drillTo5">
+			<input type="text" class="form-control" placeholder="До" id="drillingTo5" name="commonInput[drillTo5]">
 		</div>
 		<div class="form-group col-md-3">
-			<select class="form-control" id="drillingDiam5" name="drillDiam5">
+			<select class="form-control" id="drillingDiam5" name="commonInput[drillDiam5]">
+			<option selected>-----</option>
 			<option>172</option>
 			<option>151</option>
 			<option>132</option>

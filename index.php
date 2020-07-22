@@ -25,6 +25,7 @@
 
 	//подключаем PostgreSQL
 	include './bd/bd.php';
+	include './php/commonInputScript.php';
 
 	//подключаем Авторизацию
 	include './scripts/auth/auth.php';
